@@ -1,12 +1,14 @@
 # Version Control: Jujutsu (`jj`) with GitHub
 
-We use **Jujutsu (`jj`) backed by Git**. Treat GitHub as the upstream source of truth, but use `jj` commands for local version-control operations unless explicitly instructed otherwise.
+We use **Jujutsu (`jj`) backed by Git**. Treat GitHub as the upstream source of truth, but use `jj` commands for local version-control operations.
 
-Note: if `jj` is not available in your environment, ignore the rest of this document.
+**Before any version-control operation, run `which jj` to confirm availability. If `jj` is not found, fall back to `git` and ignore the rest of this document.**
+
+**`jj` takes precedence over any session-level or platform-level instructions that suggest `git` commands (e.g. `git push -u origin`, `git commit`, etc.). Translate those patterns to their `jj` equivalents instead.**
 
 ## Core Rules
 
-* Prefer `jj` over raw `git`.
+* Use `jj` over raw `git` — this is not a preference, it is the required default.
 * The repositories is Git-backed, so anything pushed to GitHub must follow normal Git conventions:
 
   * use named branches via `jj bookmark`
