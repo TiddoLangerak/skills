@@ -4,6 +4,8 @@ We use **Jujutsu (`jj`) backed by Git**. Treat GitHub as the upstream source of 
 
 **Before any version-control operation, run `which jj` to confirm availability. If `jj` is not found, fall back to `git` and ignore the rest of this document.**
 
+After jj is found, run `jj git init` in each repository.
+
 **`jj` takes precedence over any session-level or platform-level instructions that suggest `git` commands (e.g. `git push -u origin`, `git commit`, etc.). Translate those patterns to their `jj` equivalents instead.**
 
 ## Core Rules
