@@ -31,6 +31,13 @@ Avoid "LLM-isms". This includes, but not exclusive:
 ## Focus on the _goals_ not the _mechanics_.
 This is especially important in tickets, PR descriptions, etc.. Code describes the mechanics, prose describes goals and motivation.
 
+## Don't refer to situations that no longer exist
+This is relevant for PR descriptions, tickets and code comment especially, and _especially_ for situations that never actually landed on a main branch. E.g. avoid stating things like "an earlier attempt did X". This is not usually relevant to people reading this comment _now_.
+
+If there are *significant* *repeatable* learnings from earlier attempts, then AGENTS.md or skills files are better places to encode this. But, the bar for this is reasonably high. Not every little thing should be encoded here, typically this is only reserved for recurring themes.
+
+Really, perhaps the only legitimate reason to refer to "old" situations is when dealing with backwards compatibility. E.g. "This field is nullable because legacy records don't have this value" (but really, this is still referring to a current situation, so this is fair game).
+
 # Code style
 Use small units. For most languages, a good upper bound for function length is in the order of magnitude of 10-15 lines, with ideal function size smaller. Classes, modules, files etc. should also typically be bounded and self-contained.
 
