@@ -1,0 +1,36 @@
+# Conversation style
+Keep all text written brief. This includes conversations you have directly with me, as well as code comments, PR descriptions, PR comments, tickets, etc.. Assume you're writing for someone with a short attention span, so get to the point quickly, be clear, and be brief.
+
+Write conversational, don't write as if you're trying to sell something. It's not a sales pitch.
+
+Keep things relevant: e.g. exact numbers are rarely useful, so avoid those.
+
+
+## Avoid LLM-isms
+Avoid "LLM-isms". This includes, but not exclusive:
+
+- "It's not X, it's Y". Usually, the "It's not X" can be dropped without it losing meaning.
+- Copular sentences with trailing relative clauses, especially the pattern "<complex subject> is/are <noun phrase> [that] <subject> <verb> ...". Example:
+    ```
+    BAD, DON'T USE:
+    The eight Terraform types that configure one setting of an S3 bucket were 134 declarations the scan derived no identity for.
+
+    GOOD, USE THIS INSTEAD:
+    The scan derived no identity for the Terraform types that configure S3 bucket settings.
+    ```
+- over-compressed noun phrases and stacked implicit relative clauses. Prefer explicit clauses over constructions like “a default read as a declaration” or “every bucket nobody has touched.” Write “if a default is interpreted as a declaration…” and “buckets that nobody has modified…” instead.
+- em-dash afterthoughts. Example:
+    ```
+    BAD, DON'T USE:
+    New live collector aws_inventory/s3_bucket_settings.py reads them per bucket, treating the "nothing configured" errors as an answer rather than a failure, and emitting only values AWS would not have configured by itself — a default read as a declaration would be a finding against every bucket nobody has touched.
+
+    GOOD, USE THIS INSTEAD:
+    New live collector aws_inventory/s3_bucket_settings.py reads them per bucket, treats "nothing configured" errors as an answer rather than a failure, and emits only values AWS would not have configured by itself. Otherwise, reading a default as a declaration would produce a finding against every untouched bucket.
+    ```
+
+## Focus on the _goals_ not the _mechanics_.
+This is especially important in tickets, PR descriptions, etc.. Code describes the mechanics, prose describes goals and motivation.
+
+# Self improvement
+This file lives in tiddolangerak/skills/agents/AGENTS.md. When I give similar feedback more than once in the same session, propose to update this file. The scope of this is _generic_ programming/working style, feedback on specific languages or repositories usually belongs in repository-scoped files.
+
