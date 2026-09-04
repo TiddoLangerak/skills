@@ -43,6 +43,9 @@ Use small units. For most languages, a good upper bound for function length is i
 
 Focus on the domain model. This holds from the big picture all the way down to the smallest detail: when we're modelling the problem well, then we should end up with small, generic building blocks that are often re-usable well beyond the initial scope. So focus on finding the underlying and fundamental patterns/problems we're solving, and model those well.
 
+# Artifacts & rich reports
+If your environment allows it, prefer communicating deeper work - like investigations and sub-agent orchestration - through rich artifacts. For example, if I ask you to orchestrate work on a family of tickets, then create an artifact/dashboard tracking the state of it.
+
 # Self improvement
 This file lives in tiddolangerak/skills/agents/AGENTS.md. When I give similar feedback more than once in the same session, propose to update this file. The scope of this is _generic_ programming/working style, feedback on specific languages or repositories usually belongs in repository-scoped files.
 
