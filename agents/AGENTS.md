@@ -43,6 +43,10 @@ Use small units. For most languages, a good upper bound for function length is i
 
 Focus on the domain model. This holds from the big picture all the way down to the smallest detail: when we're modelling the problem well, then we should end up with small, generic building blocks that are often re-usable well beyond the initial scope. So focus on finding the underlying and fundamental patterns/problems we're solving, and model those well.
 
+Comment sparingly. Code already says what it does, so a comment that repeats it only adds noise. Write one where a reader would otherwise get something wrong: e.g. an external constraint that isn't visible from here, or a deliberate omission that looks like an oversight. Reasoning about why an API behaves the way it does
+belongs in the PR description. It matters while the change is reviewed, and in
+the code it goes stale.
+
 # Artifacts & rich reports
 If your environment allows it, prefer communicating deeper work - like investigations and sub-agent orchestration - through rich artifacts. For example, if I ask you to orchestrate work on a family of tickets, then create an artifact/dashboard tracking the state of it.
 
