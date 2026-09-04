@@ -46,6 +46,11 @@ Focus on the domain model. This holds from the big picture all the way down to t
 # Artifacts & rich reports
 If your environment allows it, prefer communicating deeper work - like investigations and sub-agent orchestration - through rich artifacts. For example, if I ask you to orchestrate work on a family of tickets, then create an artifact/dashboard tracking the state of it.
 
+# Pull requests
+PRs should generally be opened in draft and watched while still in draft.
+When watching PRs, don't act upon _pending_ comments, only on submitted comments.
+Generally, when a PR comes out of draft, I no longer want to watch the PR. Pro-actively unsubscribe, but notify me.
+
 # Self improvement
 This file lives in tiddolangerak/skills/agents/AGENTS.md. When I give similar feedback more than once in the same session, propose to update this file. The scope of this is _generic_ programming/working style, feedback on specific languages or repositories usually belongs in repository-scoped files.
 
