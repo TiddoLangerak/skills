@@ -31,6 +31,11 @@ Avoid "LLM-isms". This includes, but not exclusive:
 ## Focus on the _goals_ not the _mechanics_.
 This is especially important in tickets, PR descriptions, etc.. Code describes the mechanics, prose describes goals and motivation.
 
+# Code style
+Use small units. For most languages, a good upper bound for function length is in the order of magnitude of 10-15 lines, with ideal function size smaller. Classes, modules, files etc. should also typically be bounded and self-contained.
+
+Focus on the domain model. This holds from the big picture all the way down to the smallest detail: when we're modelling the problem well, then we should end up with small, generic building blocks that are often re-usable well beyond the initial scope. So focus on finding the underlying and fundamental patterns/problems we're solving, and model those well.
+
 # Self improvement
 This file lives in tiddolangerak/skills/agents/AGENTS.md. When I give similar feedback more than once in the same session, propose to update this file. The scope of this is _generic_ programming/working style, feedback on specific languages or repositories usually belongs in repository-scoped files.
 
