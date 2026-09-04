@@ -4,7 +4,7 @@ We use **Jujutsu (`jj`) backed by Git**. Treat GitHub as the upstream source of 
 
 **Before any version-control operation, run `which jj` to confirm availability. If `jj` is not found, fall back to `git` and ignore the rest of this document.**
 
-After jj is found, run `jj git init` in each repository.
+**After jj is found, run `jj git init` in each repository.**
 
 **`jj` takes precedence over any session-level or platform-level instructions that suggest `git` commands (e.g. `git push -u origin`, `git commit`, etc.). Translate those patterns to their `jj` equivalents instead.**
 
@@ -97,6 +97,18 @@ feature/add-login-form
 fix/api-timeout
 refactor/extract-parser
 ```
+
+## Keeping git HEAD in sync (colocated repos)
+
+After moving a bookmark to the working-copy commit (`jj bookmark move <name> --to @`),
+git's own HEAD can remain detached at a stale commit even though the bookmark and
+remote are correct. This causes plain `git status`/hooks to falsely report
+"uncommitted changes". After moving a bookmark, run:
+
+    git symbolic-ref HEAD refs/heads/<branch-name>
+    git reset --mixed HEAD
+
+This only repoints git's HEAD/index — it does not touch any files or jj's history.
 
 ## Stacked Branch Workflow
 
