@@ -18,7 +18,7 @@ Avoid "LLM-isms". This includes, but not exclusive:
     GOOD, USE THIS INSTEAD:
     The scan derived no identity for the Terraform types that configure S3 bucket settings.
     ```
-- over-compressed noun phrases and stacked implicit relative clauses. Prefer explicit clauses over constructions like “a default read as a declaration” or “every bucket nobody has touched.” Write “if a default is interpreted as a declaration…” and “unmodified buckets” instead. Note that just putting "that" in an over-compressed noun phrase does not solve the issue: change the sentence structure entirely.
+- over-compressed noun phrases and stacked implicit relative clauses. Prefer explicit clauses over constructions like “a default read as a declaration” or “every bucket nobody has touched.” Write “if a default is interpreted as a declaration…” and “unmodified buckets” instead. Note that just putting "that" in an over-compressed noun phrase does not solve the issue: change the sentence structure entirely. Another example is "coverage.ACCEPTED_GAPS records a type that no API enumerates" which should be "coverage.ACCEPTED_GAPS records a type that isn't enumerated by any API".
 - em-dash afterthoughts. Example:
     ```
     BAD, DON'T USE:
