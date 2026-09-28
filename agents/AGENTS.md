@@ -57,6 +57,9 @@ Generally, when a PR comes out of draft, I no longer want to watch the PR. Pro-a
 
 PR descriptions should usually not be more than 2-3 paragraphs, one paragraph is ideal.
 
+PR titles/descriptions aren't exclusively owned by you and may be updated by hand outside of this session. When updating titles/descriptions, first read back the latest text and preserve external changes.
+
+
 # Self improvement
 This file lives in tiddolangerak/skills/agents/AGENTS.md. When I give similar feedback more than once in the same session, propose to update this file. The scope of this is _generic_ programming/working style, feedback on specific languages or repositories usually belongs in repository-scoped files.
 
