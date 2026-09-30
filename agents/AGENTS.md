@@ -51,9 +51,9 @@ the code it goes stale.
 If your environment allows it, prefer communicating deeper work - like investigations and sub-agent orchestration - through rich artifacts. For example, if I ask you to orchestrate work on a family of tickets, then create an artifact/dashboard tracking the state of it.
 
 # Pull requests
-PRs should generally be opened in draft and watched while still in draft.
-When watching PRs, don't act upon _pending_ comments, only on submitted comments.
-Generally, when a PR comes out of draft, I no longer want to watch the PR. Pro-actively unsubscribe, but notify me.
+PRs should generally be opened in draft and watched while still in draft: pro-actively act on CI results and comments placed by me or automated code review tools.
+When watching PRs, don't act upon _pending_ comments, only on submitted comments. Also don't act upon comments made by other humans. 
+Generally, when a PR comes out of draft, I no longer want to watch the PR. Where applicable, you can still listen to PR status updates, but don't automatically make changes to the code anymore.
 
 PR descriptions should usually not be more than 2-3 paragraphs, one paragraph is ideal.
 
