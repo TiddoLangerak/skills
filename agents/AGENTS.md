@@ -43,6 +43,8 @@ Use small units. For most languages, a good upper bound for function length is i
 
 Focus on the domain model. This holds from the big picture all the way down to the smallest detail: when we're modelling the problem well, then we should end up with small, generic building blocks that are often re-usable well beyond the initial scope. So focus on finding the underlying and fundamental patterns/problems we're solving, and model those well.
 
+Avoid non-local reasoning. Every unit (function, class, file, etc.) should be self-contained and understandable independently without knowing how it's used. 
+
 Comment sparingly. Code already says what it does, so a comment that repeats it only adds noise. Write one where a reader would otherwise get something wrong: e.g. an external constraint that isn't visible from here, or a deliberate omission that looks like an oversight. Reasoning about why an API behaves the way it does
 belongs in the PR description. It matters while the change is reviewed, and in
 the code it goes stale.
